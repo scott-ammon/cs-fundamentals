@@ -2,7 +2,7 @@ testArray = [24, 2, 16, 103, 45, 22, 133, 7, 9]
 
 var insertionSort = function(arr) {
   for(let i = 1; i < arr.length; i++) {
-    // element we are trying to sort
+    // store element we are trying to sort as 'key'
     key = arr[i];
     // initialize j to the left of the key
     j = i - 1
