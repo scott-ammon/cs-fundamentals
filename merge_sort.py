@@ -25,6 +25,5 @@ def merge_sort(arr):
     r = arr[mid:]
     return merge(merge_sort(l), merge_sort(r))
 
-
 data = [5, 10, 3, 90, 95, 654, 34, 9112, -6, 80]
 print(merge_sort(data))

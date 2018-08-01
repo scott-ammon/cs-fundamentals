@@ -1,3 +1,20 @@
+var insertionSort = function(arr) {
+  for(let i = 1; i < arr.length; i++) {
+    // store element we are trying to sort as 'key'
+    key = arr[i];
+    // initialize j to the left of the key
+    j = i - 1
+    // swap the key left until it's sorted
+    while(key < arr[j] && j >= 0) {
+      arr[j+1] = arr[j];
+      j-= 1;
+    }
+    // set new key to the first unsorted element
+    arr[j+1] = key
+  }
+  return arr;
+}
+
 function bucketSort(arr, bucketCount=6) {
   let min = Math.min(...arr);
   let buckets = [];
@@ -10,7 +27,6 @@ function bucketSort(arr, bucketCount=6) {
     buckets[newIndex].push(num);
     count++;
   });
-  console.log("buckets:", buckets);
   // put the elements back into the array
   var idx = 0;
   for (let i = 0; i < buckets.length; i++) {
@@ -24,7 +40,6 @@ function bucketSort(arr, bucketCount=6) {
       }
     }
   }
-  console.log("count: ", count)
   return arr;
 }
 

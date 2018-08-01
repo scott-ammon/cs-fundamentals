@@ -19,7 +19,6 @@ var makeHeap = function(arr, n, i) {
 var heapSort = function(arr) {
   n = arr.length;
   for(let i = n/2 - 1; i >=0; i--) {
-    console.log('hello');
     makeHeap(arr, n, i);
   }
   for(let i = n - 1; i >= 0; i--) {
