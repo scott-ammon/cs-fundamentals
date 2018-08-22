@@ -77,5 +77,4 @@ numArray = [4, -5, 35, -73, 12, -14, 8];
 
 // Using filter
 const rearrange = numArray.filter(element => element < 0).concat(numArray.filter(element => element >= 0));
-
 console.log(rearrange);
