@@ -5,7 +5,7 @@ const merge = function (left, right) {
     return left;
   }
   if(left.length === 0) {
-    return right;
+    return right;''
   }
 
   // Find smallest number and remove it
